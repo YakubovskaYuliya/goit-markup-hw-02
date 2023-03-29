@@ -4,15 +4,14 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    background-color: var(--hero-color);
 }
 
 img {
     display: block;
 }
 
-ul {
-    list-style: none;
-}
+
 
 
 
@@ -41,13 +40,21 @@ ul {
     margin: -1px;
 }
 
+.list {
+    list-style: none;
+}
 
+.link {
+    text-decoration: none;
+}
+
+
+/* Header */
 
 .header-logo {
     color: var(--title-text-color);
     font-weight: 800;
     font-family: 'Raleway', sans-serif;
-    text-decoration: none;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -64,7 +71,7 @@ ul {
 
 .site-nav-link {
     color: var(--title-text-color);
-    text-decoration: none;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -73,21 +80,26 @@ ul {
 
 .site-nav-link:hover,
 .site-nav-link:focus {
-    color: var(--accent-color);
+    color: var(--button-second-color);
 }
 
 .site-nav-link.current {
     color: var(--accent-color);
 }
 
+
+.main-address {
+    font-style: normal;
+}
+
 .contacts-link {
     color: var(--primary-text-color);
-    text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    font-style: normal;
+
 }
+
 
 .contacts-link:hover,
 .contacts-link:focus {
@@ -109,6 +121,7 @@ ul {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
+    letter-spacing: 0.02em;
 }
 
 .button {
@@ -135,16 +148,15 @@ ul {
 
 
 .about-title {
-
     color: var(--title-text-color);
-
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
 
 }
 
-.text {
+.about-text {
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -157,14 +169,36 @@ ul {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.11;
     text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-transform: capitalize;
 }
 
 /* Team Section */
+.team {
+    background-color: var(--footer-logo-color);
+}
+
+.team-item {
+
+    background-color: var(--hero-color);
+}
 
 .team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    letter-spacing: 0.02em;
     color: var(--title-text-color);
+}
+
+.team-rank {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 /*  цвет основного текста #434455 */
@@ -213,14 +247,12 @@ footer {
     color: var(--hero-color);
 }
 
-.portfolio-link {
-    text-decoration: none;
-}
+
 
 .card-title {
     font-weight: 500;
     font-size: 20px;
-    line-height: calc(24 / 20);
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
@@ -230,6 +262,6 @@ footer {
 .card-types {
     color: var(--primary-text-color);
     font-size: 16px;
-    line-height: calc(24 / 16);
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
